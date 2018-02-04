@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="box_padding">10dp</dimen>
+    <dimen name="button_bottom_padding">20dp</dimen>
+    <dimen name="logo_padding">30dp</dimen>
+    <dimen name="padding_topbar">100dp</dimen>
+    <dimen name="layout_margin">16dp</dimen>
+</resources>

@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.quiz.MainActivity"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@android:color/white">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/photo_tl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/padding_topbar"
+        android:background="@color/colorPrimaryDark"
+        tools:ignore="UnusedAttribute"
+        android:elevation="4dp">
+        <ImageView
+            android:layout_marginTop="@dimen/logo_padding"
+            android:layout_height="63dp"
+            android:layout_width="wrap_content"
+            android:src="@drawable/scrubs"
+            />
+    </android.support.v7.widget.Toolbar>
+ <ScrollView
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:fillViewport="true"
+>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:clipChildren="true"
+    android:layout_margin="@dimen/layout_margin">
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="vertical"
+         android:background="@drawable/roundedbackground"
+         android:layout_marginBottom="@dimen/box_padding">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:background="@drawable/roundedtitle"
+        android:text="@string/what_is_your_name"
+        android:textColor="@android:color/black"/>
+    <EditText
+        android:id="@+id/namefield"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/name"
+        android:inputType="textCapWords"
+        />
+     </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/roundedbackground"
+        android:layout_marginBottom="@dimen/box_padding">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:background="@drawable/roundedtitle"
+            android:text="@string/where_do_the_characters_work_in_the_show"
+            android:textColor="@android:color/black"/>
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/check_the_correct_answer_below" />
+        <RadioGroup
+            android:id="@+id/rQ1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/radiobutton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sacred_heart_hospital"
+                />
+            <RadioButton
+                android:id="@+id/radiobutton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/seattle_grace"
+                />
+            <RadioButton
+                android:id="@+id/radiobutton3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/princeton_plainsboro_teaching_hospital" />
+        </RadioGroup>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/roundedbackground"
+        android:layout_marginBottom="@dimen/box_padding">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:background="@drawable/roundedtitle"
+            android:text="@string/what_is_the_name_of_the_show_s_narrator_and_main_character"
+            android:textColor="@android:color/black"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/check_the_correct_answer" />
+        <RadioGroup
+            android:id="@+id/rQ2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/radiobutton4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nurse_carla_espinosa"/>
+        <RadioButton
+            android:id="@+id/radiobutton5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dr_john_quot_j_d_quot_dorian"/>
+        <RadioButton
+            android:id="@+id/radiobutton6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/snoop_dogg_intern"/>
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/roundedbackground"
+        android:layout_marginBottom="@dimen/box_padding">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:background="@drawable/roundedtitle"
+            android:text="@string/on_the_pilot_episode_jd_fantasizes_about_having_a_family_with_elliot_in_which_sitcoms_living_room_does_the_fantasy_take_place"
+            android:textColor="@android:color/black"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/check_the_correct_answer" />
+        <RadioGroup
+            android:id="@+id/rQ3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/radiobutton7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/friends"/>
+        <RadioButton
+            android:id="@+id/radiobutton8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/home_improvement"/>
+        <RadioButton
+            android:id="@+id/radiobutton9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/my_wife_and_kids"/>
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/roundedbackground"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:background="@drawable/roundedtitle"
+            android:text="@string/to_which_studio_does_the_show_belong_to"
+            android:textColor="@android:color/black"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/type_the_correct_answer"
+            />
+        <EditText
+            android:id="@+id/itisABC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/type_your_answer_here"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/roundedbackground"
+        android:layout_marginBottom="@dimen/box_padding">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:background="@drawable/roundedtitle"
+            android:text="@string/where_did_the_show_air_is_streamed"
+            android:textColor="@android:color/black"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/check_the_correct_answer_s" />
+        <CheckBox
+            android:id="@+id/checkbox1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/abc"/>
+        <CheckBox
+            android:id="@+id/checkbox2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nbc"/>
+        <CheckBox
+            android:id="@+id/checkbox3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/netflix"/>
+        <CheckBox
+            android:id="@+id/checkbox4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hulu"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/roundedbackground"
+        android:layout_marginBottom="@dimen/box_padding">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:background="@drawable/roundedtitle"
+            android:text="@string/we_get_to_know_in_season_8_the_janitor_s_name"
+            android:textColor="@android:color/black"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/check_the_correct_answer"
+            />
+        <RadioGroup
+            android:id="@+id/rQ4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+<RadioButton
+    android:id="@+id/radiobutton10"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/false_answer"/>
+        <RadioButton
+            android:id="@+id/radiobutton11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/true_answer"/>
+        </RadioGroup>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/roundedbackground"
+        android:layout_marginBottom="10dp">
+        <TextView
+            android:background="@drawable/roundedtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/summary"
+            android:textColor="@android:color/black"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/summary"
+            android:text="@string/your_score_will_appear_here_after_you_have_hit_the_quot_submit_quot_button"/>
+
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="horizontal">
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/button_bottom_padding"
+        android:onClick="resetScore"
+        android:text="@string/reset"
+        android:visibility="invisible"/>
+    <Button
+        android:id="@+id/submitButton"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/button_bottom_padding"
+        android:onClick="calculateScore"
+    android:text="@string/submit"
+/>
+    <Button
+        android:id="@+id/shareButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/button_bottom_padding"
+        android:onClick="submitScore"
+        android:text="@string/send"
+        android:visibility="invisible"/>
+</LinearLayout>
+
+</LinearLayout>
+
+ </ScrollView>
+</LinearLayout>
+
+
+</FrameLayout>
